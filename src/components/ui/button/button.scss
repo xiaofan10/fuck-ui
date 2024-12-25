@@ -1,0 +1,27 @@
+// button css style
+$color: #ff0;
+$bgColor: #000;
+$size: (
+  sm: 20px,
+  md: 32px,
+  lg: 40px,
+  pdsm: 10px 20px,
+  pdmd: 12px 24px,
+  pdlg: 14px 28px,
+);
+.fc-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: $color;
+  background-color: $bgColor;
+  line-height: 1;
+  white-space: nowrap;
+  outline: none;
+  box-sizing: border-box;
+  user-select: none;
+  cursor: pointer;
+  transition: 0.1s;
+  height: map-get($size, md);
+  padding: map-get($size, pdmd);
+}
