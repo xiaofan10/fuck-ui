@@ -1,0 +1,49 @@
+$namescape: 'fc';
+$namescpge-separator: '-';
+$element-separator: '__';
+$modifier-separator: '--';
+// bem('block', 'element', 'modifier') => 'fc-block__element--modifier'
+@function bem($block, $element: '', $modifier: '') {
+  $name: $namescape + $namescpge-separator + $block;
+  @if $element != '' {
+    $name: $name + $element-separator + $element;
+  }
+  @if $modifier != '' {
+    $name: $name + $modifier-separator + $modifier;
+  }
+  @return $name;
+}
+
+@mixin b($block) {
+  $B: $namescape + $namescpge-separator + $block;
+  .#{$B} {
+    @content;
+  }
+}
+
+@mixin e($element) {
+  $E: $element !global;
+  $selector: $element-separator + $E;
+  @at-root {
+    &#{$selector} {
+      @content;
+    }
+  }
+}
+
+@mixin m($modifier) {
+  $selector: $modifier-separator + $modifier;
+  @at-root {
+    &#{$selector} {
+      @content;
+    }
+  }
+}
+// block__element.is-active {}
+@mixin is($state, $prefix: 'is') {
+  @at-root {
+    &.#{$prefix}-#{$state} {
+      @content;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import ButtonDemo from './views/Button.vue'
+import Special from './components/ui/special/index.vue'
 </script>
 
 <template>
@@ -8,6 +9,7 @@ import ButtonDemo from './views/Button.vue'
 
     <div class="wrapper">
       <ButtonDemo />
+      <Special />
     </div>
   </header>
 </template>

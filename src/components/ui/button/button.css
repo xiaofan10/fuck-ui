@@ -1,0 +1,332 @@
+.fc-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff0;
+  background-color: #000;
+  line-height: 1;
+  white-space: nowrap;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  transition: 0.1s;
+  height: 32px;
+  padding: 12px 24px;
+}
+.fc-button--primary {
+  color: #f00;
+}
+.fc-button--primary.is-plain {
+  color: #00f;
+}
+.fc-button--primary.is-plain.is-disabled {
+  color: #f0f;
+}
+.fc-button--primary.is-plain.is-disabled:hover, .fc-button--primary.is-plain.is-disabled:active, .fc-button--primary.is-plain.is-disabled:focus {
+  color: #000;
+}
+
+.fc-button--primary.is-plain:hover, .fc-button--primary.is-plain:active, .fc-button--primary.is-plain:focus {
+  color: #000;
+}
+
+.fc-button--primary.is-round {
+  color: #00f;
+}
+.fc-button--primary.is-round:hover, .fc-button--primary.is-round:active, .fc-button--primary.is-round:focus {
+  color: #000;
+}
+.fc-button--primary.is-round.is-disabled {
+  color: #f0f;
+}
+.fc-button--primary.is-round.is-disabled:hover, .fc-button--primary.is-round.is-disabled:active, .fc-button--primary.is-round.is-disabled:focus {
+  color: #000;
+}
+
+.fc-button--primary.is-circle {
+  color: #00f;
+}
+.fc-button--primary.is-circle:hover, .fc-button--primary.is-circle:active, .fc-button--primary.is-circle:focus {
+  color: #000;
+}
+.fc-button--primary.is-circle.is-disabled {
+  color: #f0f;
+}
+.fc-button--primary.is-circle.is-disabled:hover, .fc-button--primary.is-circle.is-disabled:active, .fc-button--primary.is-circle.is-disabled:focus {
+  color: #000;
+}
+
+.fc-button--primary.is-link {
+  color: #00f;
+}
+.fc-button--primary.is-link:hover, .fc-button--primary.is-link:active, .fc-button--primary.is-link:focus {
+  color: #000;
+}
+.fc-button--primary.is-link.is-disabled {
+  color: #f0f;
+}
+.fc-button--primary.is-link.is-disabled:hover, .fc-button--primary.is-link.is-disabled:active, .fc-button--primary.is-link.is-disabled:focus {
+  color: #000;
+}
+
+.fc-button--primary.is-disabled {
+  color: #f0f;
+}
+.fc-button--primary.is-disabled:hover, .fc-button--primary.is-disabled:active, .fc-button--primary.is-disabled:focus {
+  color: #000;
+}
+
+.fc-button--success {
+  color: #f00;
+}
+.fc-button--success.is-plain {
+  color: #00f;
+}
+.fc-button--success.is-plain.is-disabled {
+  color: #f0f;
+}
+.fc-button--success.is-plain.is-disabled:hover, .fc-button--success.is-plain.is-disabled:active, .fc-button--success.is-plain.is-disabled:focus {
+  color: #000;
+}
+
+.fc-button--success.is-plain:hover, .fc-button--success.is-plain:active, .fc-button--success.is-plain:focus {
+  color: #000;
+}
+
+.fc-button--success.is-round {
+  color: #00f;
+}
+.fc-button--success.is-round:hover, .fc-button--success.is-round:active, .fc-button--success.is-round:focus {
+  color: #000;
+}
+.fc-button--success.is-round.is-disabled {
+  color: #f0f;
+}
+.fc-button--success.is-round.is-disabled:hover, .fc-button--success.is-round.is-disabled:active, .fc-button--success.is-round.is-disabled:focus {
+  color: #000;
+}
+
+.fc-button--success.is-circle {
+  color: #00f;
+}
+.fc-button--success.is-circle:hover, .fc-button--success.is-circle:active, .fc-button--success.is-circle:focus {
+  color: #000;
+}
+.fc-button--success.is-circle.is-disabled {
+  color: #f0f;
+}
+.fc-button--success.is-circle.is-disabled:hover, .fc-button--success.is-circle.is-disabled:active, .fc-button--success.is-circle.is-disabled:focus {
+  color: #000;
+}
+
+.fc-button--success.is-link {
+  color: #00f;
+}
+.fc-button--success.is-link:hover, .fc-button--success.is-link:active, .fc-button--success.is-link:focus {
+  color: #000;
+}
+.fc-button--success.is-link.is-disabled {
+  color: #f0f;
+}
+.fc-button--success.is-link.is-disabled:hover, .fc-button--success.is-link.is-disabled:active, .fc-button--success.is-link.is-disabled:focus {
+  color: #000;
+}
+
+.fc-button--success.is-disabled {
+  color: #f0f;
+}
+.fc-button--success.is-disabled:hover, .fc-button--success.is-disabled:active, .fc-button--success.is-disabled:focus {
+  color: #000;
+}
+
+.fc-button--info {
+  color: #f00;
+}
+.fc-button--info.is-plain {
+  color: #00f;
+}
+.fc-button--info.is-plain.is-disabled {
+  color: #f0f;
+}
+.fc-button--info.is-plain.is-disabled:hover, .fc-button--info.is-plain.is-disabled:active, .fc-button--info.is-plain.is-disabled:focus {
+  color: #000;
+}
+
+.fc-button--info.is-plain:hover, .fc-button--info.is-plain:active, .fc-button--info.is-plain:focus {
+  color: #000;
+}
+
+.fc-button--info.is-round {
+  color: #00f;
+}
+.fc-button--info.is-round:hover, .fc-button--info.is-round:active, .fc-button--info.is-round:focus {
+  color: #000;
+}
+.fc-button--info.is-round.is-disabled {
+  color: #f0f;
+}
+.fc-button--info.is-round.is-disabled:hover, .fc-button--info.is-round.is-disabled:active, .fc-button--info.is-round.is-disabled:focus {
+  color: #000;
+}
+
+.fc-button--info.is-circle {
+  color: #00f;
+}
+.fc-button--info.is-circle:hover, .fc-button--info.is-circle:active, .fc-button--info.is-circle:focus {
+  color: #000;
+}
+.fc-button--info.is-circle.is-disabled {
+  color: #f0f;
+}
+.fc-button--info.is-circle.is-disabled:hover, .fc-button--info.is-circle.is-disabled:active, .fc-button--info.is-circle.is-disabled:focus {
+  color: #000;
+}
+
+.fc-button--info.is-link {
+  color: #00f;
+}
+.fc-button--info.is-link:hover, .fc-button--info.is-link:active, .fc-button--info.is-link:focus {
+  color: #000;
+}
+.fc-button--info.is-link.is-disabled {
+  color: #f0f;
+}
+.fc-button--info.is-link.is-disabled:hover, .fc-button--info.is-link.is-disabled:active, .fc-button--info.is-link.is-disabled:focus {
+  color: #000;
+}
+
+.fc-button--info.is-disabled {
+  color: #f0f;
+}
+.fc-button--info.is-disabled:hover, .fc-button--info.is-disabled:active, .fc-button--info.is-disabled:focus {
+  color: #000;
+}
+
+.fc-button--warining {
+  color: #f00;
+}
+.fc-button--warining.is-plain {
+  color: #00f;
+}
+.fc-button--warining.is-plain.is-disabled {
+  color: #f0f;
+}
+.fc-button--warining.is-plain.is-disabled:hover, .fc-button--warining.is-plain.is-disabled:active, .fc-button--warining.is-plain.is-disabled:focus {
+  color: #000;
+}
+
+.fc-button--warining.is-plain:hover, .fc-button--warining.is-plain:active, .fc-button--warining.is-plain:focus {
+  color: #000;
+}
+
+.fc-button--warining.is-round {
+  color: #00f;
+}
+.fc-button--warining.is-round:hover, .fc-button--warining.is-round:active, .fc-button--warining.is-round:focus {
+  color: #000;
+}
+.fc-button--warining.is-round.is-disabled {
+  color: #f0f;
+}
+.fc-button--warining.is-round.is-disabled:hover, .fc-button--warining.is-round.is-disabled:active, .fc-button--warining.is-round.is-disabled:focus {
+  color: #000;
+}
+
+.fc-button--warining.is-circle {
+  color: #00f;
+}
+.fc-button--warining.is-circle:hover, .fc-button--warining.is-circle:active, .fc-button--warining.is-circle:focus {
+  color: #000;
+}
+.fc-button--warining.is-circle.is-disabled {
+  color: #f0f;
+}
+.fc-button--warining.is-circle.is-disabled:hover, .fc-button--warining.is-circle.is-disabled:active, .fc-button--warining.is-circle.is-disabled:focus {
+  color: #000;
+}
+
+.fc-button--warining.is-link {
+  color: #00f;
+}
+.fc-button--warining.is-link:hover, .fc-button--warining.is-link:active, .fc-button--warining.is-link:focus {
+  color: #000;
+}
+.fc-button--warining.is-link.is-disabled {
+  color: #f0f;
+}
+.fc-button--warining.is-link.is-disabled:hover, .fc-button--warining.is-link.is-disabled:active, .fc-button--warining.is-link.is-disabled:focus {
+  color: #000;
+}
+
+.fc-button--warining.is-disabled {
+  color: #f0f;
+}
+.fc-button--warining.is-disabled:hover, .fc-button--warining.is-disabled:active, .fc-button--warining.is-disabled:focus {
+  color: #000;
+}
+
+.fc-button--danger {
+  color: #f00;
+}
+.fc-button--danger.is-plain {
+  color: #00f;
+}
+.fc-button--danger.is-plain.is-disabled {
+  color: #f0f;
+}
+.fc-button--danger.is-plain.is-disabled:hover, .fc-button--danger.is-plain.is-disabled:active, .fc-button--danger.is-plain.is-disabled:focus {
+  color: #000;
+}
+
+.fc-button--danger.is-plain:hover, .fc-button--danger.is-plain:active, .fc-button--danger.is-plain:focus {
+  color: #000;
+}
+
+.fc-button--danger.is-round {
+  color: #00f;
+}
+.fc-button--danger.is-round:hover, .fc-button--danger.is-round:active, .fc-button--danger.is-round:focus {
+  color: #000;
+}
+.fc-button--danger.is-round.is-disabled {
+  color: #f0f;
+}
+.fc-button--danger.is-round.is-disabled:hover, .fc-button--danger.is-round.is-disabled:active, .fc-button--danger.is-round.is-disabled:focus {
+  color: #000;
+}
+
+.fc-button--danger.is-circle {
+  color: #00f;
+}
+.fc-button--danger.is-circle:hover, .fc-button--danger.is-circle:active, .fc-button--danger.is-circle:focus {
+  color: #000;
+}
+.fc-button--danger.is-circle.is-disabled {
+  color: #f0f;
+}
+.fc-button--danger.is-circle.is-disabled:hover, .fc-button--danger.is-circle.is-disabled:active, .fc-button--danger.is-circle.is-disabled:focus {
+  color: #000;
+}
+
+.fc-button--danger.is-link {
+  color: #00f;
+}
+.fc-button--danger.is-link:hover, .fc-button--danger.is-link:active, .fc-button--danger.is-link:focus {
+  color: #000;
+}
+.fc-button--danger.is-link.is-disabled {
+  color: #f0f;
+}
+.fc-button--danger.is-link.is-disabled:hover, .fc-button--danger.is-link.is-disabled:active, .fc-button--danger.is-link.is-disabled:focus {
+  color: #000;
+}
+
+.fc-button--danger.is-disabled {
+  color: #f0f;
+}
+.fc-button--danger.is-disabled:hover, .fc-button--danger.is-disabled:active, .fc-button--danger.is-disabled:focus {
+  color: #000;
+}/*# sourceMappingURL=button.css.map */

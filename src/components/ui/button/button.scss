@@ -1,3 +1,5 @@
+@use './function.scss' as *;
+
 // button css style
 $color: #ff0;
 $bgColor: #000;
@@ -9,7 +11,10 @@ $size: (
   pdmd: 12px 24px,
   pdlg: 14px 28px,
 );
-.fc-button {
+
+$types: ('primary', 'success', 'info', 'warining', 'danger');
+
+@include b(button) {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -24,4 +29,85 @@ $size: (
   transition: 0.1s;
   height: map-get($size, md);
   padding: map-get($size, pdmd);
+
+  @each $type in $types {
+    @include m($type) {
+      color: #f00;
+
+      @include is('plain') {
+        color: #00f;
+        @include is('disabled') {
+          color: #f0f;
+          &:hover,
+          &:active,
+          &:focus {
+            color: #000;
+          }
+        }
+        &:hover,
+        &:active,
+        &:focus {
+          color: #000;
+        }
+      }
+      @include is('round') {
+        color: #00f;
+        &:hover,
+        &:active,
+        &:focus {
+          color: #000;
+        }
+        @include is('disabled') {
+          color: #f0f;
+          &:hover,
+          &:active,
+          &:focus {
+            color: #000;
+          }
+        }
+      }
+      @include is('circle') {
+        color: #00f;
+        &:hover,
+        &:active,
+        &:focus {
+          color: #000;
+        }
+        @include is('disabled') {
+          color: #f0f;
+          &:hover,
+          &:active,
+          &:focus {
+            color: #000;
+          }
+        }
+      }
+      @include is('link') {
+        color: #00f;
+        &:hover,
+        &:active,
+        &:focus {
+          color: #000;
+        }
+        @include is('disabled') {
+          color: #f0f;
+          &:hover,
+          &:active,
+          &:focus {
+            color: #000;
+          }
+        }
+      }
+      @include is('disabled') {
+        color: #f0f;
+        &:hover,
+        &:active,
+        &:focus {
+          color: #000;
+        }
+      }
+    }
+  }
 }
+
+// fc-button fc-button-primary fc-button-info fc-button-success
